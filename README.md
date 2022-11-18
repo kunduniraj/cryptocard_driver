@@ -1,5 +1,4 @@
 # Programming Assignment
-## CS730: Topics in Operating System, 2021-22, Semester-II
 
 ## Directory Structure
 PA1 code base contains five directories, Makefile and other supported files required to complete the PA1 and described as follows:
