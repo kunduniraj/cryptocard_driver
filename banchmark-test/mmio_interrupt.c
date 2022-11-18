@@ -49,11 +49,11 @@ int main()
   }
 
   // Setting the DMA
-  set_config(cdev, DMA, SET);
+  set_config(cdev, DMA, UNSET);
 
   // Setting the Interrupt
-  set_config(cdev, INTERRUPT, UNSET);
-  
+  set_config(cdev, INTERRUPT, SET);
+
   if(set_key(cdev, a, b) == ERROR){
     printf("Unable to set key\n");
     exit(0);

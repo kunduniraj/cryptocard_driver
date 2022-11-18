@@ -49,26 +49,32 @@ int main()
   }
 
   // Setting the DMA
-  set_config(cdev, DMA, SET);
+  set_config(cdev, DMA, UNSET);
 
   // Setting the Interrupt
   set_config(cdev, INTERRUPT, UNSET);
-  
+
   if(set_key(cdev, a, b) == ERROR){
     printf("Unable to set key\n");
     exit(0);
   }
 
   unsigned int chunk_size = 4096;
+
   unsigned int number_of_chunk = (file_size / chunk_size);
+
+
+  void *device_mmap_address = map_card(cdev, chunk_size);
 
   for(unsigned int chunk = 0; chunk < number_of_chunk ; chunk++)
   {
       unsigned int offset = (chunk*chunk_size);
       void *buffer_address = buffer + offset;
 
-      encrypt(cdev, buffer_address, chunk_size, 0);
-      decrypt(cdev, buffer_address, chunk_size, 0);
+      strncpy((char*)device_mmap_address, (char*) buffer_address, chunk_size);
+      
+      encrypt(cdev, device_mmap_address, chunk_size, 1);
+      decrypt(cdev, device_mmap_address, chunk_size, 1);
   }
 
 
