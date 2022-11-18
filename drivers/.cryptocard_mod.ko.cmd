@@ -1,0 +1,1 @@
+cmd_/home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.ko /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.o /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.mod.o;  true

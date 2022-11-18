@@ -1,0 +1,1 @@
+cmd_/home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.mod := { echo  /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard.o;  echo; } > /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.mod

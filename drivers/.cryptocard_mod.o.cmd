@@ -1,0 +1,1 @@
+cmd_/home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.o := ld -m elf_x86_64    -r -o /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard_mod.o /home/sanyam/cryptocard/CS730-PA-library-master/drivers/cryptocard.o

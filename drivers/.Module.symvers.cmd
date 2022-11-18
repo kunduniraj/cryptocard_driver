@@ -1,0 +1,1 @@
+cmd_/home/sanyam/cryptocard/CS730-PA-library-master/drivers/Module.symvers := sed 's/ko$$/o/' /home/sanyam/cryptocard/CS730-PA-library-master/drivers/modules.order | scripts/mod/modpost  -a   -o /home/sanyam/cryptocard/CS730-PA-library-master/drivers/Module.symvers -e -i Module.symvers   -T -
